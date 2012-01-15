@@ -1399,3 +1399,973 @@ Completed 302 Found in 25ms
   Processing by StoreController#index as HTML
   [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY title
 Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.7ms)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2011-12-30 19:06:57', '2011-12-30 19:06:57', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2011-12-30 19:06:57', '2011-12-30 19:06:57', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2011-12-30 19:06:57', '2011-12-30 19:06:57', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2011-12-30 19:06:57', '2011-12-30 19:06:57', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2011-12-30 19:06:57', '2011-12-30 19:06:57', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2011-12-30 19:06:57', '2011-12-30 19:06:57', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2011-12-30 19:06:57', '2011-12-30 19:06:57', 207281424)
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2011-12-30 19:07:01', '2011-12-30 19:07:01', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2011-12-30 19:07:01', '2011-12-30 19:07:01', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2011-12-30 19:07:01', '2011-12-30 19:07:01', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2011-12-30 19:07:01', '2011-12-30 19:07:01', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2011-12-30 19:07:01', '2011-12-30 19:07:01', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2011-12-30 19:07:01', '2011-12-30 19:07:01', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2011-12-30 19:07:01', '2011-12-30 19:07:01', 207281424)
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  Processing by CartsController#create as HTML
+  Parameters: {"cart"=>{"id"=>"980190962", "created_at"=>"2011-12-30 19:07:01 UTC", "updated_at"=>"2011-12-30 19:07:01 UTC"}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00], ["updated_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/carts/980190963
+Completed 302 Found in 5ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  Processing by CartsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190962[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 47ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCart Load (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered carts/_form.html.erb (1.7ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#index as HTML
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" 
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#new as HTML
+Rendered carts/_form.html.erb (0.9ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by CartsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190962
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#update as HTML
+  Parameters: {"cart"=>{"id"=>"980190962", "created_at"=>"2011-12-30 19:07:01 UTC", "updated_at"=>"2011-12-30 19:07:01 UTC"}, "id"=>"980190962"}
+  [1m[35mCart Load (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/carts/980190962
+Completed 302 Found in 2ms
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "line_items" 
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"207281424"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00], ["updated_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "207281424"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190963 AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 980190963], ["created_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00], ["product_id", 207281424], ["quantity", 1], ["updated_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 980190963 LIMIT 1
+Redirected to http://test.host/carts/980190963
+Completed 302 Found in 24ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "line_items" [0m
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "line_items" [0m
+  Processing by LineItemsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/line_items
+Completed 302 Found in 1ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "line_items" 
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by LineItemsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered line_items/_form.html.erb (2.6ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by LineItemsController#index as HTML
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" 
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by LineItemsController#new as HTML
+Rendered line_items/_form.html.erb (1.5ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by LineItemsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by LineItemsController#update as HTML
+  Parameters: {"line_item"=>{"id"=>"980190962", "product_id"=>"1", "cart_id"=>"1", "created_at"=>"2011-12-30 19:07:01 UTC", "updated_at"=>"2011-12-30 19:07:01 UTC", "quantity"=>"1"}, "id"=>"980190962"}
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/line_items/980190962
+Completed 302 Found in 3ms
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+  Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"title"=>"Lorem Ipsum", "description"=>"Wibbles are fun", "image_url"=>"lorem.jpg", "price"=>"19.95"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Lorem Ipsum' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00], ["description", "Wibbles are fun"], ["image_url", "lorem.jpg"], ["price", #<BigDecimal:7fe4e6062fc0,'0.1995E2',18(18)>], ["title", "Lorem Ipsum"], ["updated_at", Fri, 30 Dec 2011 19:07:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/980190963
+Completed 302 Found in 25ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products" 
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products" 
+  Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."product_id" = 980190962[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "products" WHERE "products"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products
+Completed 302 Found in 3ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products" 
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered products/_form.html.erb (2.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" 
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.1ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ProductsController#new as HTML
+Rendered products/_form.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"title"=>"Lorem Ipsum", "description"=>"Wibbles are fun", "image_url"=>"lorem.jpg", "price"=>"19.95"}, "id"=>"980190962"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE ("products"."title" = 'Lorem Ipsum' AND "products"."id" != 980190962) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "products" SET "title" = 'Lorem Ipsum', "description" = 'Wibbles are fun', "image_url" = 'lorem.jpg', "price" = 19.95, "updated_at" = '2011-12-30 19:07:01.886446' WHERE "products"."id" = 980190962
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/980190962
+Completed 302 Found in 4ms
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2011-12-30 19:10:30', '2011-12-30 19:10:30', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2011-12-30 19:10:30', '2011-12-30 19:10:30', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2011-12-30 19:10:30', '2011-12-30 19:10:30', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2011-12-30 19:10:30', '2011-12-30 19:10:30', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2011-12-30 19:10:30', '2011-12-30 19:10:30', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2011-12-30 19:10:30', '2011-12-30 19:10:30', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2011-12-30 19:10:30', '2011-12-30 19:10:30', 207281424)
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 02:53:02', '2012-01-15 02:53:02', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 02:53:02', '2012-01-15 02:53:02', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 02:53:02', '2012-01-15 02:53:02', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 02:53:02', '2012-01-15 02:53:02', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 02:53:02', '2012-01-15 02:53:02', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 02:53:02', '2012-01-15 02:53:02', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 02:53:02', '2012-01-15 02:53:02', 207281424)
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 02:53:06', '2012-01-15 02:53:06', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 02:53:06', '2012-01-15 02:53:06', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 02:53:06', '2012-01-15 02:53:06', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 02:53:06', '2012-01-15 02:53:06', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 02:53:06', '2012-01-15 02:53:06', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 02:53:06', '2012-01-15 02:53:06', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 02:53:06', '2012-01-15 02:53:06', 207281424)
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  Processing by CartsController#create as HTML
+  Parameters: {"cart"=>{"id"=>"980190962", "created_at"=>"2012-01-15 02:53:06 UTC", "updated_at"=>"2012-01-15 02:53:06 UTC"}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00], ["updated_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/carts/980190963
+Completed 302 Found in 5ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  Processing by CartsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190962[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 66ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "carts" 
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCart Load (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered carts/_form.html.erb (1.8ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#index as HTML
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" 
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#new as HTML
+Rendered carts/_form.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by CartsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190962
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CartsController#update as HTML
+  Parameters: {"cart"=>{"id"=>"980190962", "created_at"=>"2012-01-15 02:53:06 UTC", "updated_at"=>"2012-01-15 02:53:06 UTC"}, "id"=>"980190962"}
+  [1m[35mCart Load (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/carts/980190962
+Completed 302 Found in 3ms
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "line_items" 
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"207281424"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00], ["updated_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "207281424"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190963 AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "total_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["cart_id", 980190963], ["created_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00], ["product_id", 207281424], ["quantity", 1], ["total_price", #<BigDecimal:7fb3bacd10c0,'0.495E2',18(18)>], ["updated_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 980190963 LIMIT 1[0m
+Redirected to http://test.host/carts/980190963
+Completed 302 Found in 41ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "line_items" 
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "line_items" 
+  Processing by LineItemsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/line_items
+Completed 302 Found in 1ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "line_items" [0m
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by LineItemsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Rendered line_items/_form.html.erb (2.7ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by LineItemsController#index as HTML
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" [0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by LineItemsController#new as HTML
+Rendered line_items/_form.html.erb (1.5ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by LineItemsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", "980190962"]]
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by LineItemsController#update as HTML
+  Parameters: {"line_item"=>{"id"=>"980190962", "product_id"=>"1", "cart_id"=>"1", "created_at"=>"2012-01-15 02:53:06 UTC", "updated_at"=>"2012-01-15 02:53:06 UTC", "quantity"=>"1", "total_price"=>nil}, "id"=>"980190962"}
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/line_items/980190962
+Completed 302 Found in 3ms
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products" 
+  Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"title"=>"Lorem Ipsum", "description"=>"Wibbles are fun", "image_url"=>"lorem.jpg", "price"=>"19.95"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Lorem Ipsum' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00], ["description", "Wibbles are fun"], ["image_url", "lorem.jpg"], ["price", #<BigDecimal:7fb3bd844c20,'0.1995E2',18(18)>], ["title", "Lorem Ipsum"], ["updated_at", Sun, 15 Jan 2012 02:53:06 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/980190963
+Completed 302 Found in 26ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+  Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."product_id" = 980190962
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products
+Completed 302 Found in 3ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Rendered products/_form.html.erb (3.0ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" [0m
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ProductsController#new as HTML
+Rendered products/_form.html.erb (2.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "980190962"]]
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"title"=>"Lorem Ipsum", "description"=>"Wibbles are fun", "image_url"=>"lorem.jpg", "price"=>"19.95"}, "id"=>"980190962"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE ("products"."title" = 'Lorem Ipsum' AND "products"."id" != 980190962) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "products" SET "title" = 'Lorem Ipsum', "description" = 'Wibbles are fun', "image_url" = 'lorem.jpg', "price" = 19.95, "updated_at" = '2012-01-15 02:53:07.034290' WHERE "products"."id" = 980190962[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/980190962
+Completed 302 Found in 4ms
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 02:53:31', '2012-01-15 02:53:31', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 02:53:31', '2012-01-15 02:53:31', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 02:53:31', '2012-01-15 02:53:31', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 02:53:31', '2012-01-15 02:53:31', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 02:53:31', '2012-01-15 02:53:31', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 02:53:31', '2012-01-15 02:53:31', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 02:53:31', '2012-01-15 02:53:31', 207281424)
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:20:45', '2012-01-15 03:20:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:20:45', '2012-01-15 03:20:45', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:20:45', '2012-01-15 03:20:45', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:20:45', '2012-01-15 03:20:45', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:20:45', '2012-01-15 03:20:45', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:20:45', '2012-01-15 03:20:45', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:20:45', '2012-01-15 03:20:45', 207281424)
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:20:59', '2012-01-15 03:20:59', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:20:59', '2012-01-15 03:20:59', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:20:59', '2012-01-15 03:20:59', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:20:59', '2012-01-15 03:20:59', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:20:59', '2012-01-15 03:20:59', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:20:59', '2012-01-15 03:20:59', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:20:59', '2012-01-15 03:20:59', 207281424)
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:21:17', '2012-01-15 03:21:17', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:21:17', '2012-01-15 03:21:17', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:21:17', '2012-01-15 03:21:17', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:21:17', '2012-01-15 03:21:17', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:21:17', '2012-01-15 03:21:17', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:21:17', '2012-01-15 03:21:17', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:21:17', '2012-01-15 03:21:17', 207281424)
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:21:28', '2012-01-15 03:21:28', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:21:28', '2012-01-15 03:21:28', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:21:28', '2012-01-15 03:21:28', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:21:28', '2012-01-15 03:21:28', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:21:28', '2012-01-15 03:21:28', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:21:28', '2012-01-15 03:21:28', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:21:28', '2012-01-15 03:21:28', 207281424)
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:43:01', '2012-01-15 03:43:01', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:43:01', '2012-01-15 03:43:01', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:43:01', '2012-01-15 03:43:01', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:43:01', '2012-01-15 03:43:01', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:43:01', '2012-01-15 03:43:01', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:43:01', '2012-01-15 03:43:01', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:43:01', '2012-01-15 03:43:01', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:46:15', '2012-01-15 03:46:15', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:46:15', '2012-01-15 03:46:15', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:46:15', '2012-01-15 03:46:15', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:46:15', '2012-01-15 03:46:15', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:46:15', '2012-01-15 03:46:15', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:46:15', '2012-01-15 03:46:15', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:46:15', '2012-01-15 03:46:15', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:46:52', '2012-01-15 03:46:52', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:46:52', '2012-01-15 03:46:52', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:46:52', '2012-01-15 03:46:52', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:46:52', '2012-01-15 03:46:52', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:46:52', '2012-01-15 03:46:52', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:46:52', '2012-01-15 03:46:52', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:46:52', '2012-01-15 03:46:52', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:51:12', '2012-01-15 03:51:12', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:51:12', '2012-01-15 03:51:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:51:12', '2012-01-15 03:51:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:51:12', '2012-01-15 03:51:12', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:51:12', '2012-01-15 03:51:12', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:51:12', '2012-01-15 03:51:12', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:51:12', '2012-01-15 03:51:12', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:51:45', '2012-01-15 03:51:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:51:45', '2012-01-15 03:51:45', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:51:45', '2012-01-15 03:51:45', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:51:45', '2012-01-15 03:51:45', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:51:45', '2012-01-15 03:51:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:51:45', '2012-01-15 03:51:45', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:51:45', '2012-01-15 03:51:45', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:53:06', '2012-01-15 03:53:06', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:53:06', '2012-01-15 03:53:06', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:53:06', '2012-01-15 03:53:06', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:53:06', '2012-01-15 03:53:06', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:53:06', '2012-01-15 03:53:06', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:53:06', '2012-01-15 03:53:06', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:53:06', '2012-01-15 03:53:06', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:53:42', '2012-01-15 03:53:42', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:53:42', '2012-01-15 03:53:42', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:53:42', '2012-01-15 03:53:42', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:53:42', '2012-01-15 03:53:42', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:53:42', '2012-01-15 03:53:42', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:53:42', '2012-01-15 03:53:42', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:53:42', '2012-01-15 03:53:42', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:54:32', '2012-01-15 03:54:32', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 03:54:32', '2012-01-15 03:54:32', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:54:32', '2012-01-15 03:54:32', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 03:54:32', '2012-01-15 03:54:32', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:54:32', '2012-01-15 03:54:32', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 03:54:32', '2012-01-15 03:54:32', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 03:54:32', '2012-01-15 03:54:32', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:03:05', '2012-01-15 04:03:05', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:03:05', '2012-01-15 04:03:05', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:03:05', '2012-01-15 04:03:05', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:03:05', '2012-01-15 04:03:05', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:03:05', '2012-01-15 04:03:05', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:03:05', '2012-01-15 04:03:05', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 04:03:05', '2012-01-15 04:03:05', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:19:30', '2012-01-15 04:19:30', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:19:30', '2012-01-15 04:19:30', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:19:30', '2012-01-15 04:19:30', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:19:30', '2012-01-15 04:19:30', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:19:30', '2012-01-15 04:19:30', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:19:30', '2012-01-15 04:19:30', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 04:19:30', '2012-01-15 04:19:30', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:27:26', '2012-01-15 04:27:26', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:27:26', '2012-01-15 04:27:26', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:27:26', '2012-01-15 04:27:26', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:27:26', '2012-01-15 04:27:26', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:27:26', '2012-01-15 04:27:26', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:27:26', '2012-01-15 04:27:26', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 04:27:26', '2012-01-15 04:27:26', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Sun, 15 Jan 2012 04:27:26 UTC +00:00], ["updated_at", Sun, 15 Jan 2012 04:27:26 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "total_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["cart_id", 980190963], ["created_at", Sun, 15 Jan 2012 04:27:26 UTC +00:00], ["product_id", 207281424], ["quantity", 1], ["total_price", #<BigDecimal:7f9a36e464e8,'0.495E2',18(18)>], ["updated_at", Sun, 15 Jan 2012 04:27:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190963 AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:31:48', '2012-01-15 04:31:48', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at", "id") VALUES ('2012-01-15 04:31:48', '2012-01-15 04:31:48', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "line_items"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:31:48', '2012-01-15 04:31:48', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "line_items" ("product_id", "cart_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-01-15 04:31:48', '2012-01-15 04:31:48', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "products"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:31:48', '2012-01-15 04:31:48', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2012-01-15 04:31:48', '2012-01-15 04:31:48', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "price", "image_url", "created_at", "updated_at", "id") VALUES ('Programming Ruby 1.9', 'Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add ruby to your toolbox.', 49.5, 'ruby.png', '2012-01-15 04:31:48', '2012-01-15 04:31:48', 207281424)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" IS NULL AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Sun, 15 Jan 2012 04:31:48 UTC +00:00], ["updated_at", Sun, 15 Jan 2012 04:31:48 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "total_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["cart_id", 980190963], ["created_at", Sun, 15 Jan 2012 04:31:48 UTC +00:00], ["product_id", 207281424], ["quantity", 1], ["total_price", #<BigDecimal:7f820f70c5b8,'0.495E2',18(18)>], ["updated_at", Sun, 15 Jan 2012 04:31:48 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190963 AND "line_items"."product_id" = 207281424 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 207281424]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 980190963
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'short!' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 207281424]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'Programming Ruby 1.9' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "products" WHERE "products"."title" = 'My Book Title' LIMIT 1

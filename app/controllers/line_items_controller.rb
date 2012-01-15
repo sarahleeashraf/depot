@@ -79,9 +79,10 @@ class LineItemsController < ApplicationController
   def destroy
     @line_item = LineItem.find(params[:id])
     @line_item.destroy
+    alert = (@line_item.product.title + ' has been removed from your cart')
 
     respond_to do |format|
-      format.html { redirect_to line_items_url }
+      format.html { redirect_to cart_url(session[:cart_id]), notice: alert  }
       format.json { head :ok }
     end
   end
